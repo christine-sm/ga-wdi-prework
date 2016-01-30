@@ -12,7 +12,7 @@ function setSquare(player, row, col) {
 }
 
 function getPieceAt(row, col) {
-    var piece = checkerboard [row][col];
+    var piece = checkerboard [row][col]; //could I replace checkerboard [row][col] with the setSquare function?
     if (val == 'R' || val == 'B') {
         return piece;
     } else {
