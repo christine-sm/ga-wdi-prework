@@ -43,3 +43,29 @@ for (var i = (oldArray.length -1); i >= 0; i -= 1) {
     newArray.push(oldArray[i]);
     console.log(newArray);
 }
+
+//Start with a variable x and an array of your choosing. Write an expression that will increase x by 10 once for every element in the array.
+
+var plusTen = function(x) {
+    console.log(x + 10);
+    return (x + 10);
+}
+var oldArray = [12, 45, 6, 23, 19, 20, 20, 15, 30, 42].map(plusTen);
+console.log(oldArray);
+
+//Create an array of masses in kilograms, and use it to produce an array of those same masses in pounds (hint: it's roughly 2.2 pounds to the kilogram).
+
+var kilosToPounds = function(y) {
+    console.log(y * 2.2);
+    return (y *2.2);
+}
+var oldArray = [12, 45, 6, 23, 19, 20, 20, 15, 30, 42].map(kilosToPounds);
+console.log(oldArray);
+
+//Believe it or not, Strings have a .length property just like arrays do. Armed with this knowledge, create an array of strings, and use an iterator to produce an array containing the length of each string.
+var stringsLength = function(x) {
+    var stringsArray = ['apple', 'banana', 'cherry', 'durian'];
+    console.log(stringsArray.length);
+ }
+var stringsNewArray = ['apple', 'banana', 'cherry', 'durian'].map(stringsLength);
+console.log(stringsNewArray); //stringsNewArray comes out as undefined. Having difficulty with this.
